@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/jobDesc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="50K Sign-on Bonus|Apply Now! CSR-Voice | Start Monday |HMO + Fixed weekends off!"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/jobCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jobDesc"
+        android:text="✅iPloy, OPC Inc."
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/jobCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="⚫ Call Center"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/jobCompany"
+        android:layout_below="@id/jobDesc"
+        android:textColor="@color/black"
+        />
+
+
+</RelativeLayout>

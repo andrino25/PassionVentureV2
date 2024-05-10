@@ -23,47 +23,5 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         binding.navView.setupWithNavController(navController)
-
-        val backButton = findViewById<ImageButton>(R.id.backButton)
-        backButton.setOnClickListener {
-            // Navigate back to the previous destination
-            findNavController(R.id.nav_host_fragment_activity_main).navigateUp()
-        }
-
-        val menuButton = findViewById<ImageButton>(R.id.menuButton)
-        menuButton.setOnClickListener { view ->
-            showOverflowMenu(view)
-        }
-
     }
-
-    private fun showOverflowMenu(view: View) {
-        val popupMenu = PopupMenu(this, view)
-        popupMenu.inflate(R.menu.nav_menu)
-
-        popupMenu.setOnMenuItemClickListener { item: MenuItem ->
-            when (item.itemId) {
-                R.id.action_profile -> {
-                    // Handle profile action
-                    true
-                }
-                R.id.action_messages -> {
-                    // Handle messages action
-                    true
-                }
-                R.id.action_saved_resources -> {
-                    // Handle saved resources action
-                    true
-                }
-                R.id.action_logout -> {
-                    // Handle logout action
-                    true
-                }
-                else -> false
-            }
-        }
-
-        popupMenu.show()
-    }
-
 }
